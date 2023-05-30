@@ -41,7 +41,7 @@ html {
 
 }
 
-#grid-item {
+.grid-item {
     display: grid;
     border: 1px solid black;
     font-size: x-large;
@@ -52,14 +52,18 @@ html {
 
 }
 
-#grid-item:hover {
+.grid-item:hover {
     background-color: slateblue;
     transition-duration: .3s;
     transition-delay: .05s;
 
 }
 
-#category {}
+div.grid-item.grid-item-rd2 {
+    pointer-events: none;
+}
+
+.category {}
 
 div.under {
     margin: 2rem;
@@ -85,8 +89,6 @@ form {
     margin: auto;
 }
 
-input[type=submit] {}
-
 input#guessButton {
     padding: 10px 24px;
     float: left;
@@ -106,6 +108,12 @@ input[type=submit]:hover {
 button.nextRound {
     padding: 10px 24px;
     float: right;
+    margin-right: 2rem;
+}
+
+button.prevRound {
+    padding: 10px 24px;
+    float: left;
     margin-right: 2rem;
 }
 
@@ -130,7 +138,7 @@ button:hover {
     margin-bottom: 1rem;
 }
 
-#center {
+.center {
     margin: auto;
     width: 50%;
     ;
