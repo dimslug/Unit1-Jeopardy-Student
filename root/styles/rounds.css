@@ -1,0 +1,95 @@
+*,
+
+html {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.roundOne{
+    display: grid;
+    grid-template-columns: 1rem auto 1rem;
+    grid-template-rows: 5rem 10rem auto 10rem 12rem 5rem;
+    grid-template-areas:
+    ". header ."
+    ". heading ."
+    ". main ."
+    "inpt inpt inpt"
+    "rndchng rndchng rndchng"
+    ". footer .";
+}
+
+.gridHeader {
+    display: grid;
+    grid-area: header;
+    text-align: center;
+}
+
+.gridHeading {
+    display:grid;
+    grid-area: heading;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-area: main;
+    background-color: lightgrey;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
+
+}
+
+#grid-item {
+    display: grid;
+
+}
+
+#grid-item:hover {
+    background-color: slateblue;
+    transition-duration: .3s;
+    transition-delay: .05s;
+
+}
+
+#category{
+
+}
+
+form{
+
+}
+
+button.guessButton{
+    place-content: inpt;
+
+}
+
+button.passButton{
+
+}
+
+button.nextRound{
+    grid-area: inpt;
+
+}
+
+button:hover {
+    background-color: slategrey;
+    transition-duration: .3s;
+    transition-delay: .05s;
+}
+footer {
+    display: grid;
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: lightgrey;
+    font-size: large;
+    text-align: center;
+    justify-self: center;
+}
+
+footer>a {
+    text-decoration: none;
+    text-align: center;
+}
