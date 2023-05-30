@@ -17,12 +17,12 @@
         <h3 class="gridHeading">Player Turn</h3>
 
         <div class="grid-container">
-            <div id="grid-item" egory">CATEGORY1</div>
-            <div id="grid-item" egory">CATEGORY2</div>
-            <div id="grid-item" egory">CATEGORY3</div>
-            <div id="grid-item" egory">CATEGORY4</div>
-            <div id="grid-item" egory">CATEGORY5</div>
-            <div id="grid-item" egory">CATEGORY6</div>
+            <div id="grid-item" id="category">CATEGORY1</div>
+            <div id="grid-item" id="category">CATEGORY2</div>
+            <div id="grid-item" id="category">CATEGORY3</div>
+            <div id="grid-item" id="category">CATEGORY4</div>
+            <div id="grid-item" id="category">CATEGORY5</div>
+            <div id="grid-item" id="category">CATEGORY6</div>
             <div id="grid-item">200</div>
             <div id="grid-item">200</div>
             <div id="grid-item">200</div>
@@ -54,22 +54,29 @@
             <div id="grid-item">1000</div>
             <div id="grid-item">1000</div>
         </div>
-            <form>
-                <input type="text" id="answer">
-            </form>
-            <button class="guessButton">Guess</button>
-            <button class="passButton">Pass</button>
-
-            <h3>Player 1 Score :</h3>
-            <h3>Player 2 Score :</h3>
-
-            <button class="nextRound">Next Round</button>
 
 
+
+    </div>
+    <div class="under">
+        <form action="#">
+            <input type="text"><br>
+            <input id="guessButton" type="submit" value="Guess">
+            <input id="passButton" type="submit" value="Pass">
+        </form>
+
+        <div id="scoreOne">
+            <h3>Player 1 Score : 0</h3>
+        </div>
+        <div id="scoreTwo">
+            <h3>Player 2 Score : 0</h3>
+        </div>
+
+        <button class="nextRound">Next Round</button>
+        <div id="center">
             <footer><a href="./index.html">*Upright Unit 1 Project Copyright 2023*</a></footer>
-
-
         </div>
+    </div>
 </body>
 
 </html>
