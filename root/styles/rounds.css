@@ -35,7 +35,6 @@ html {
 .grid-container {
     display: grid;
     grid-area: main;
-
     grid-template-columns: auto auto auto auto auto auto;
     text-align: center;
 
@@ -59,7 +58,7 @@ html {
 
 }
 
-div.grid-item.grid-item-rd2 {
+div.gi-rd2 {
     pointer-events: none;
 }
 
@@ -71,8 +70,7 @@ div.under {
 }
 
 form {
-    margin-left: 38rem;
-    margin-right: 38rem;
+    margin: auto;
     width: 20rem;
 }
 
@@ -85,8 +83,10 @@ input[type=text] {
     height: 100%;
 }
 
-form {
-    margin: auto;
+input[type=submit]:hover {
+    background-color: slateblue;
+    transition-duration: .3s;
+    transition-delay: .05s;
 }
 
 input#guessButton {
@@ -97,12 +97,6 @@ input#guessButton {
 input#passButton {
     padding: 10px 24px;
     float: right;
-}
-
-input[type=submit]:hover {
-    background-color: slateblue;
-    transition-duration: .3s;
-    transition-delay: .05s;
 }
 
 button.nextRound {
@@ -141,7 +135,6 @@ button:hover {
 .center {
     margin: auto;
     width: 50%;
-    ;
 }
 
 footer {
